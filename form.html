@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer Tutoring Interest Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<form
+action="https://formspree.io/f/manyeolo"
+method="POST">
+        <fieldset>
+            <legend>Peer Tutoring Interest Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first name" placeholder = "Enter Your First Name Here" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  name="last-name" id = "last-name" placeholder = "Enter Your Last Name Here" required>
+
+            <label for="uniqname"> Uniqname:</label>
+            <input type="text" id="uniqname" name="uniqname" placeholder = "Enter Your Uniqname Here">
+
+            <div class="dropdown">
+                <label for = "degree-program">Select Your Degree Program from the Dropdown Menu:</label>
+                <select name="degree-program" id = "degree-program">
+                    <option value="msi-ux">MSI: UX Track</option>
+                    <option value="msi-ds">MSI: Big Data Track</option>
+                    <option value="msi-lakes">MSI: LAKES Track</option>
+                    <option value="msi-ucag">MSI: User-Centered Agile Development Track</option>
+                    <option value="mhi">MHI</option>
+                    <option value="mads">MADS</option>
+                  </select>
+            </div>
+
+            <div class = "radio">
+                <p>For which course/content are you looking to engage with a peer tutor?</p>
+
+                <label for="si506">SI 506</label>
+                <input type="radio" id="si506" name="course" value="si506">
+                <br><br><br>
+
+                <label for="si507">SI 507</label>
+                <input type="radio" id="si507" name="course" value="si507">
+                <br><br><br>
+
+                <label for="gen-python">General Python Support</label>
+                <input type="radio" id="gen-python" name="course" value="gen-python">
+                <br><br><br>
+
+                <label for="lin-alg">Linear Algebra</label>
+                <input type="radio" id="lin-alg" name="course" value="lin-alg">
+                <br><br><br>
+
+                <label for="stats">Statistics</label>
+                <input type="radio" id="stats" name="course" value="stats">
+                <br><br><br>
+
+                <label for="gen-math">General Math Support</label>
+                <input type="radio" id="gen-math" name="course" value="gen-math">
+            </div>
+
+            <br>
+
+            <label for = "tutoring-start">When would you like to begin working with a tutor?</label>
+            <input type="date" name="tutoring-start" id = "tutoring-start">
+
+            <br><br>
+
+            <label for = "other-info">Is there anything else you'd like us to know?</label>
+            <textarea name="other-info" id = "other-info" placeholder="Type any additional comments here" width = 60% height = 30%></textarea>
+
+            <input type="submit" name = "submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
